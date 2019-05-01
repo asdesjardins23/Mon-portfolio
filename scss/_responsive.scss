@@ -209,9 +209,15 @@
 	}
 }
 @media (max-width: 767px) {
+	
+	.navbar-brand {
+		font-size: 15px;
+		font-weight: bold;
+}
 	.home_banner_area {
 		min-height: 300px;
 	}
+	
 	.home_banner_area .banner_inner {
 		min-height: 300px;
 		padding-top: 155px;
@@ -220,8 +226,11 @@
 	.home_banner_area .banner_inner .banner_content {
 		margin-top: 0px;
 		.primary_btn {
-			display: none;
+			width: 100%
+			/*display: none;*/
 		}
+		
+	
 	}
 
 	/* Blog Page Area css
