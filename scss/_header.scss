@@ -64,6 +64,11 @@ margin:-120px 0 0; /* negative fixed header height */
     border: 0px;
     border-radius: 0px;
     width: 100%;
+	
+	li:nth-child(4){
+		margin-left: 250px;
+		}
+	
     .nav {
         .nav-item {
             margin-right: 40px;
@@ -168,6 +173,21 @@ margin:-120px 0 0; /* negative fixed header height */
         }
     }
 }
+
+.contactIcone{
+	padding: 15px;
+	
+	a{
+	color: black;
+		
+		&:hover{
+			color: $primary-color2;
+			
+			
+			}
+		
+		}
+	}
 
 .header_area{
 
