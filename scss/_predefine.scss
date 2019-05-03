@@ -108,7 +108,9 @@
     background-size: 200% auto;
     &:hover {
         background-position: right center;
-        color: #fff;
+        color: #fff;	
+		-webkit-animation: tada 1s;
+		animation: tada 1s;
     }
 }
 .primary_btn2 {

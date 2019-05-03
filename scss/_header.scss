@@ -25,6 +25,11 @@
     }
     .navbar-brand {
         margin-right: 0px;
+		
+		&:hover {
+    		-webkit-animation: swing 1s;
+    		animation: swing 1s;
+		}
     }
     &.navbar_fixed {
         .main_menu {
@@ -69,13 +74,21 @@ margin:-120px 0 0; /* negative fixed header height */
 		margin-left: 250px;
 		}
 	
+	@media (max-width: 991px) {
+		
+		li:nth-child(4){
+			margin-left: 0;
+		}
+       
+    }
+	
     .nav {
         .nav-item {
             margin-right: 40px;
+			color: $title-color;
             .nav-link {
                 font: 500 14px/100px $primary-font;
                 text-transform: uppercase;
-                color: $title-color;
                 padding: 0px;
                 font-size: 12px;
                 display: inline-block;
@@ -175,7 +188,20 @@ margin:-120px 0 0; /* negative fixed header height */
 }
 
 .contactIcone{
+	&:hover {
+    -webkit-animation: bounce 1s;
+    animation: bounce 1s;
+}
+	
 	padding: 15px;
+	
+		@media (max-width: 991px) {
+		
+		padding: 15px;
+		width: 100%;
+		text-align: center;
+       
+    }
 	
 	a{
 	color: black;

@@ -105,14 +105,16 @@
 	}
 	.header_area .navbar-collapse {
 		max-height: 340px;
-		overflow-y: scroll;
 	}
 	.header_area .navbar .nav .nav-item.submenu ul .nav-item .nav-link {
 		padding: 0px 15px;
 	}
 	.header_area .navbar .nav .nav-item {
 		margin-right: 0px;
+		height: 50px;
+		text-align: center;
 	}
+	
 	.header_area + section,
 	.header_area + row,
 	.header_area + div {

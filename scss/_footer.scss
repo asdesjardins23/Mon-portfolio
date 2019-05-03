@@ -8,8 +8,30 @@
     @media (max-width: 1024px) {
         padding: 60px 0;
     }
+	
+	 a.nav-link.text-white{
+		
+		color: white;
+	
+		&:hover {
+    		color: $primary-color; 
+		}
+		
+	}
+		
+	.logoFooter{
+		img{
+	
+		&:hover {
+    		-webkit-animation: swing 1s;
+    		animation: swing 1s;
+		}
+			}
+		
+	}
     .footer_logo {
         text-align: center;
+		
     }
     .footer_social {
         text-align: center;
@@ -41,7 +63,7 @@
             margin-bottom: 0;
         }
         a {
-            color: #a932c7;
+            color: $primary-color;
         }
     }
 }
