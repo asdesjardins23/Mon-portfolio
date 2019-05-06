@@ -79,9 +79,9 @@ body {
     background-color: #fff
 }
 
-[tabindex="-1"]:focus {
+/*[tabindex="-1"]:focus {
     outline: 0 !important
-}
+}*/
 
 hr {
     box-sizing: content-box;
@@ -200,6 +200,14 @@ a:not([href]):not([tabindex]):hover {
 
 a:not([href]):not([tabindex]):focus {
     outline: 0
+}
+
+a:focus{
+    box-shadow:0 0 0 0.2rem rgb(240,128,128);
+}
+
+a[type=button]{
+    cursor:pointer;
 }
 
 code,
@@ -2464,14 +2472,14 @@ fieldset:disabled a.btn {
 
 .btn-primary {
     color: #fff;
-    background-color: #007bff;
-    border-color: #007bff
+    background: linear-gradient(to right,#F08080 0%, #FEE140 100%);
+    border-color: none;
 }
 
 .btn-primary:hover {
     color: #fff;
-    background-color: #0069d9;
-    border-color: #0062cc
+/*    background: linear-gradient(to left,#F08080 0%, #FEE140 100%);*/
+    border-color: none;
 }
 
 .btn-primary.focus,
@@ -5588,7 +5596,7 @@ button.close {
 
 .modal {
     position: fixed;
-    top: 0;
+    top: 15%;
     right: 0;
     bottom: 0;
     left: 0;
@@ -6339,7 +6347,7 @@ button.close {
 }
 
 .bg-primary {
-    background-color: #007bff !important
+    background-color: #007bff 
 }
 
 a.bg-primary:focus,
