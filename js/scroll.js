@@ -16,3 +16,17 @@ sr.reveal('#p6', { duration: 200 });
 sr.reveal('.graphique', { duration: 500 });
 sr.reveal('#p7', { duration: 200 });
 sr.reveal('#p8', { duration: 200 });*/
+
+  // ========================================================================= //
+  //  Typed Js
+  // ========================================================================= //
+
+  var typed = $(".typed");
+
+  $(function() {
+    typed.typed({
+      strings: ["Anne-Sophie Desjardins", "designer graphique.", "intégratrice web.", "passionnée.", "avide de défis."],
+      typeSpeed: 100,
+      loop: true,
+    });
+  });

@@ -1,4 +1,18 @@
 $(document).ready(function(){
+	// ========================================================================= //
+  //  Typed Js
+  // ========================================================================= //
+
+  var typed = $(".typed");
+
+  $(function() {
+    typed.typed({
+      strings: ["Anne-Sophie Desjardins", "A Designer.", "A Web Developer.", "Freelancer.", "A Painter."],
+      typeSpeed: 100,
+      loop: true,
+    });
+  });
+
     
     (function($) {
         "use strict";

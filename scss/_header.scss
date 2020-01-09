@@ -27,8 +27,7 @@
         margin-right: 0px;
 		
 		&:hover {
-    		-webkit-animation: swing 1s;
-    		animation: swing 1s;
+   		color: $primary-color;
 		}
     }
     &.navbar_fixed {
@@ -99,7 +98,7 @@ margin:-120px 0 0; /* negative fixed header height */
             &:hover,
             &.active {
                 .nav-link {
-                    color: #efb6df;
+                    color: $primary-color;
                 }
             }
             &.submenu {
@@ -188,12 +187,13 @@ margin:-120px 0 0; /* negative fixed header height */
 }
 
 .contactIcone{
-	&:hover {
-    -webkit-animation: bounce 1s;
-    animation: bounce 1s;
-}
+//	&:hover {
+//    -webkit-animation: bounce 1s;
+//    animation: bounce 1s;
+//}
 	
 	padding: 15px;
+	
 	
 		@media (max-width: 991px) {
 		
@@ -204,10 +204,10 @@ margin:-120px 0 0; /* negative fixed header height */
     }
 	
 	a{
-	color: black;
+		color: $primary-color2;
 		
 		&:hover{
-			color: $primary-color2;
+			color: #000;
 			
 			
 			}
