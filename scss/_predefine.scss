@@ -92,7 +92,7 @@
 
 .primary_btn {
     display: inline-block;
-    background: linear-gradient(to right, $primary-color 0%, $primary-color2 51%, $primary-color 100%);
+    background-color: $primary-color2;
     color: #fff;
     letter-spacing: 0px;
     font-family: $primary-font;
@@ -105,12 +105,9 @@
     cursor: pointer;
     text-transform: uppercase;
     border-radius: 5px;
-    background-size: 200% auto;
     &:hover {
-        background-position: right center;
-        color: #fff;	
-		-webkit-animation: tada 1s;
-		animation: tada 1s;
+        color: #fff;
+        background-color: #a80d3d;
     }
 }
 .primary_btn2 {

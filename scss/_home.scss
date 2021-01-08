@@ -280,8 +280,9 @@ scroll-behavior: smooth;
                 @include transition();
                 &:hover,
                 &.active {
-                    color: $primary-color;
+                    color: $primary-color2;
                 }
+                
                 @media (max-width: 767px) {
                     margin-right: 20px;
 					font-size: 14px;
@@ -593,7 +594,7 @@ scroll-behavior: smooth;
     }
 
     small{
-        font-size: 14px;
+        font-size: 18px;
         font-weight: 300;
     }
 
@@ -658,5 +659,92 @@ scroll-behavior: smooth;
     }
 }
 
+.card-image {
+  position: relative;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background: rgba(224, 30, 90, 0.5);
+    span{
+        font-size: large;
+          position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+        font-weight: 400;
+        color: white;
+    }
+  }
+
+.card-image:hover .image-overlay {
+    opacity: 1;
+  }
+
+.filter-button
+{
+    font-size: 18px;
+    border-radius: 5px;
+    text-align: center;
+    color: $primary-color2;
+    margin-bottom: 30px;
+    background-color: white;
+    border: 1px thin $primary-color2;
+
+}
+.filter-button:hover, .filter-button .active{
+    font-size: 18px;
+    border-radius: 5px;
+    text-align: center;
+    color: #ffffff;
+    background-color: $primary-color2;
+
+}
+.filter-button:focus{
+    box-shadow: 0 0 0 0.2rem rgba(224, 30, 90, 0.5);
+}
+
+.sectionFiltre{
+    display: flex;
+    flex-wrap:wrap;
+    transition: all 0.5s ease;
+    
+}
+
+
+.carousel-caption{
+    right: 0;
+    left: 0;
+    width:100%;
+    background-color: rgba(250, 250, 250, 0.8);
+    p{
+        color:black;
+    }
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 20px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    top: 55%;
+}
 
 
