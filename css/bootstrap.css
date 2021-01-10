@@ -6121,7 +6121,7 @@ button.close {
 .carousel-item-next,
 .carousel-item-prev {
     position: absolute;
-    top: 0
+/*    top: 0*/
 }
 
 .carousel-item-next.carousel-item-left,
@@ -6206,7 +6206,7 @@ button.close {
 .carousel-control-next,
 .carousel-control-prev {
     position: absolute;
-    top: 0;
+     top: 0;
     bottom: 0;
     display: -ms-flexbox;
     display: flex;
@@ -6310,9 +6310,9 @@ button.close {
 
 .carousel-caption {
     position: absolute;
-/*    right: 15%;*/
+right: 15%;
     bottom: 20px;
-/*    left: 15%;*/
+left: 15%;
     z-index: 10;
     padding-top: 20px;
     padding-bottom: 20px;
