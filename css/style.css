@@ -2649,7 +2649,10 @@ section {
     color: black; }
 
 .carousel-indicators {
-  bottom: 20%; }
+  bottom: 40%; }
+  @media (min-width: 992px) {
+    .carousel-indicators {
+      bottom: 20%; } }
   .carousel-indicators .active {
     background-color: #e01e5a; }
   .carousel-indicators li {

@@ -731,7 +731,12 @@ scroll-behavior: smooth;
     }
 }
 .carousel-indicators {
-    bottom: 20%;
+    
+    @media(min-width: 992px){
+            
+            bottom: 20%;
+        }
+    bottom: 40%;
     .active{
         background-color: $primary-color2;
     }
