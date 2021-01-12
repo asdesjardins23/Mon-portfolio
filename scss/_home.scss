@@ -779,10 +779,15 @@ scroll-behavior: smooth;
 }
 
 .field {
-	display: flex;
-	align-items: center;
+	display: none;
+        @media(min-width: 992px){
+            display: flex;
+            align-items: center;
 	justify-content: space-around;
 	width: 100%;
+        }
+    
+
 }
 
 
