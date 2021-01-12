@@ -1,8 +1,11 @@
 /* Home Banner Area css
 ============================================================================================ */
 
+
+
+
 .home_banner_area {
-       background: url("../img/banner/banner.png") no-repeat top center;
+    background: url("../img/banner/banner.png") no-repeat top center;
     background-position: center;
     background-size: cover;
     min-height: 890px;
@@ -72,9 +75,13 @@
         }
         .primary_btn {
             margin-right: 20px;
+            
         }
     }
 }
+
+
+
 
 .banner_area {
     position: relative;
