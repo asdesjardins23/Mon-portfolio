@@ -17,11 +17,11 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 <!-- main css -->
 <link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
-
 <body>
 
-<!--================ Start Header Area =================-->
+    <!--================ Start Header Area =================-->
 <header class="header_area">
   <div class="main_menu">
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -76,11 +76,11 @@
 				</div>
 				<div class="col-md-3 ">
 					<div class="count">
-						<p class="number">537</p>
-						<h4>heures </h4> </div>
+						<p class="number">629</p>
+						<h4>idées</h4> </div>
 				</div>
 			</div>
-		</div>
+		</div>    
             <a class="primary_btn mt-5" href="#portfolio"><span>Voir ce que je fais</span></a> 
           </div>
         </div>
@@ -545,18 +545,18 @@
     <!-- End --> 
   </div>
 </section>
+<!--================ Start About Me Area =================-->
 
-    
+<!--================ End About Us Area =================--> 
+   
     
 <!--================ Start About Me Area =================-->
 <section class="about_area load-hidden mb-5" id="a-propos">
   <div class="container">
     <div class="row justify-content-start align-items-center">
-      <div class="col-lg-5">
-        <div class="container"> </div>
-        <div class="about_img">
-           <!-- <img class="img-fluid position-absolute apropos" src="img/apropos.png" alt="Image de moi avec un gilet du Rouge et or Cheerleading.">-->
-          </div>
+      <div class="col-lg-6">
+    <div id="chart_div" class="chart"></div>
+
       </div>
       <div class="offset-lg-1 col-lg-5">
         <div class="main_title text-left">
@@ -984,9 +984,6 @@
     </div>
   </div>
 </div>
-    
-    
-
 <!--================ End Modal Area =================--> 
 <!--================ End Portfolio Area =================--> 
 <!--================Footer Area =================-->
@@ -1060,7 +1057,54 @@
 $(this).addClass("active");
 
 });
-    </script>
+    </script>    
+    <script>
+        google.charts.load('current', {packages: ['corechart', 'bar']});
+google.charts.setOnLoadCallback(drawBasic);
+
+function drawBasic() {
+
+      var data = google.visualization.arrayToDataTable([
+        ['Opening Move', "Nombre d'heures", { role: 'style' }],
+        ['Adobe Illustrator', 300, 'color: #e01e5a; opacity: 0.2'],
+        ['Adobe Photoshop', 250,'color: #e01e5a; opacity: 0.2'],
+        ['Adobe Indesign', 240,'color: #e01e5a; opacity: 0.2'],
+        ['Suite Office', 230, 'color: #e01e5a; opacity: 0.2'],
+        ['Sketch', 200,'color: #e01e5a; opacity: 0.2'],
+        ['Adobe Dreamweaver', 200,'color: #e01e5a; opacity: 0.2'],
+        ['Adobe After Effects', 180, 'color: #e01e5a; opacity: 0.2'],
+        ['Adobe Premiere', 160, 'color: #e01e5a; opacity: 0.2'],
+        ['Microsoft Teams', 125, 'color: #e01e5a; opacity: 0.2'],
+        ['Axure RP', 120, 'color: #e01e5a; opacity: 0.2'],
+        ['Adobe XD', 100,'color: #e01e5a; opacity: 0.2'],
+        ['Figma', 75, 'color: #e01e5a; opacity: 0.2'],
+      ]);
+
+      var options = {
+        title: "Nombre d'heures d'expérience selon le logiciel",
+          legend: { position: 'none' },
+        chartArea: {width: '50%'},
+        hAxis: {
+          title: "Nombre d'heures",
+          minValue: 50
+        },
+        vAxis: {
+          title: 'Logiciel',
+            minSpacing: 20
+         },
+          bar: { groupWidth: "90%" }
+      };
+
+      var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+
+      chart.draw(data, options);
+    }
+
+$(window).resize(function(){
+  drawBasic();
+});
+</script>
+    
 <svg width="0" height="0" class="visually-hidden">
   <defs>
     <symbol id="ai" viewBox="0 0 96 93.6">
