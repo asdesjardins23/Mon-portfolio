@@ -577,43 +577,22 @@ section .section-title {
   color: #000;
   font-size: 20px; }
 
-/*.latest_blog_area{
+.slick-dots li{
+    background-color: grey;
+    border-radius:50%;
     
 }
-.latest_blog_inner{
-    
+
+li.slick-active {
+    background-color: #e01e5a; 
 }
-.l_blog_item{
-    .l_blog_img{
-        
-    }
-    .l_blog_text{
-        .date{
-            margin-top: 24px;
-            margin-bottom: 15px;
-            a{
-                // color: $pfont;
-                font-size: 12px;
-            }
-        }
-        h4{
-            font-size: 18px;
-            color: $title-color;
-            border-bottom: 1px solid #eeeeee;
-            margin-bottom: 0px;
-            padding-bottom: 20px;
-            @include transition;
-            &:hover{
-                color: $primary-color;
-            }
-        }
-        p{
-            margin-bottom: 0px;
-            padding-top: 20px;
-        }
-    }
+
+.item{
+    padding:10px;
+    text-align: center;
 }
-/* End Latest Blog Area css
+
+/*
 ============================================================================================ */
 /* Causes Area css
 ============================================================================================ */

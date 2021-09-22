@@ -46,6 +46,42 @@
 			});
 		}
 	});
+    
+        
+    
+    $('.slider').slick({
+    dots: true,
+    centerMode: false,
+    centerPadding: '60px',
+    arrows: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    variableWidth: false,
+    slidesToShow: 4,
+    slidesToScroll: 2,
+    responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+  });
 
 	/*----------------------------------------------------*/
 	/* Start Magnific Pop Up
